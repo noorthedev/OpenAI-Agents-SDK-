@@ -1,9 +1,37 @@
-🔹 How It Works
+Math Agent 🧮
 
-User asks: "Can you add 15 and 30 for me?"
+This is a simple example project demonstrating the use of the OpenAI Agents SDK.
+It creates a math helper agent that can add and multiply numbers using custom function tools.
 
-The agent recognizes the request and selects the correct tool.
+📂 Project Structure
+math_agent.py   # Main file containing the agent and tools
+README.md       # Documentation file
 
-Calls add_numbers(15, 30) → returns 45.
+⚙️ Requirements
 
-The agent responds: "The result is 45."
+Python 3.10+
+
+Install the OpenAI Agents SDK (supports function tools and agents):
+
+pip install openai
+
+▶️ How to Run
+
+Run the agen:
+
+python math_agent.py
+
+💡 Example Output
+Agent Response: The result of adding 15 and 30 is 45.
+
+📖 How It Works
+
+Define tools → add_numbers and multiply_numbers functions decorated with @function_tool.
+
+Create agent → math_agent with instructions and tools.
+
+Run agent → Using Runner.run_sync, the agent interprets input and calls the right tool.
+
+✅ This project shows how to create function-calling AI agents with OpenAI’s SDK.
+Perfect starting point for building smarter assistants that can use custom logic! 🚀
+
